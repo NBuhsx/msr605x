@@ -1,0 +1,12 @@
+{
+  "name": "misiri_driver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "usb": "^1.9.2"
+  },
+  "scripts": {},
+  "author": "",
+  "license": "ISC"
+}
