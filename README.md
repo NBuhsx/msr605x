@@ -3,7 +3,9 @@
     ~ npm i
     ~ node index.js
 ### Linux not root
-    ~ sudo chmod -R 777 /dev/bus/usb/
+Create rules in /etc/udev/rules.d/50-msr605x.rules
+    
+    SUBSYSTEMS=="usb", ATTRS{idVendor}=="0801", ATTRS{idProduct}=="0003", MODE="0660", TAG+="uaccess"
 ## Comands
     * read -- prepare the card reader to read a card, outputs in Raw and ISO
     * read_cycle -- read repeatedly until execution halts
